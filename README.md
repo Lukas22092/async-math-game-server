@@ -21,37 +21,27 @@ I built this small math + game server as a project to get hands on experience us
 * to start the Game simply type GAME
 
 # Examples
+```markdown
 10 + 5 + 3    # Returns 18.000000
 20 - 5 - 2    # Returns 13.000000
 2 * 3 * 4     # Returns 24.000000
 15 / 3        # Returns 5.000000
-
+```
 # Example Seesion
-* User Responses:
-Welcome!
-3 * 3
-9.000000
-2 - 1
-1.000000
-test    
-you entered something not available. please try again!
-GAME 
-Hello you number guessing the game. Please enter a number between 1 and 50
-42
-too low!
-47
-too high!
-44
-correct!
-Required guesses: 3
-exited game
-* Server Responses:
-Program starting...
-Starting to run 
+```markdown
+# Example Session
 
-
-
-
+| User Input | Server Response |
+|------------|-----------------|
+| `3 * 3`    | `9.000000` |
+| `2 - 1`    | `1.000000` |
+| `test`     | `you entered something not available. please try again!` |
+| `GAME`     | `Hello you number guessing the game. Please enter a number between 1 and 50` |
+| `42`       | `too low!` |
+| `47`       | `too high!` |
+```
+# Server log
+```markdown
 someone connected
 waiting for inputs
 added number 3 to container
@@ -75,7 +65,7 @@ waiting for inputs
 waiting for inputs
 waiting for inputs
 waiting for inputs
-
+```
 # What i learned
 * proper error handeling can avoid impossible to deciper error messages.
 * forward declaration is not enough to tell the compiler the contents of a class -> sometimes i need to move member function definitions below a second class if i want to access methods that are defined inside there.
